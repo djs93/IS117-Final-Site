@@ -9,3 +9,16 @@
     padding: 10px;
     font-size: 0.5rem;
 }
+
+.dropdown-menu {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.footer{
+    font-size: 0.75rem;
+}
+
+p{
+    margin-bottom: 0;
+}
