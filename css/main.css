@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'Android 101';
+    src: url('../fonts/android_101-webfont.woff2') format('woff2'),
+    url('../fonts/android_101-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .footer {
     position: fixed;
     left: 0;
@@ -10,15 +18,20 @@
     font-size: 0.5rem;
 }
 
-.dropdown-menu {
-    left: 50%;
-    transform: translateX(-50%);
-}
-
 .footer{
     font-size: 0.75rem;
 }
 
-p{
-    margin-bottom: 0;
+p {
+     margin-bottom: 0;
+ }
+@media screen and (min-width: 576px) {
+    .dropdown-menu {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.navbar-brand{
+    font-family: "Android 101", "Segoe UI", sans-serif;
 }
