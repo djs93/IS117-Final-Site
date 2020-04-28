@@ -25,13 +25,20 @@
 p {
      margin-bottom: 0;
  }
+
+.navbar-brand{
+    font-family: "Android 101", "Segoe UI", sans-serif;
+}
+
 @media screen and (min-width: 576px) {
     .dropdown-menu {
         left: 50%;
         transform: translateX(-50%);
     }
 }
-
-.navbar-brand{
-    font-family: "Android 101", "Segoe UI", sans-serif;
+@media screen and (max-width: 575px) {
+    .navbar-brand {
+        text-align: center;
+    }
 }
+
