@@ -50,6 +50,20 @@ p {
     padding: 8px;
 }
 
+.card > img{
+    object-fit: cover;
+    max-height: 250px;
+    height: 250px;
+}
+
+.contact-card{
+    object-position: 100% 0;
+}
+
+.card-body > .btn{
+    margin-top: 1rem;
+}
+
 @media screen and (min-width: 576px) {
     .dropdown-menu {
         left: 50%;
@@ -75,3 +89,14 @@ p {
     }
 }
 
+@media screen and (min-width: 992px){
+    .m-lg-4{
+        margin-bottom: 2.4rem !important;
+    }
+}
+
+@media screen and (max-width: 991px){
+    .m-lg-4{
+        margin-bottom: 1rem !important;
+    }
+}
