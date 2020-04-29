@@ -30,12 +30,45 @@ p {
     font-family: "Android 101", "Segoe UI", sans-serif;
 }
 
+/*
+.carousel-inner > .carousel-item > img{
+    width:40%;
+}
+*/
+
+.carousel-control-prev,
+.carousel-control-next,
+.carousel-control-prev:hover, .carousel-control-prev:focus,
+.carousel-control-next:hover,
+.carousel-control-next:focus {
+    color: #343a40;
+    filter: invert(1);
+}
+
+.carousel-caption {
+    background: rgba(52, 58, 64, 0.46);
+    padding: 8px;
+}
+
 @media screen and (min-width: 576px) {
     .dropdown-menu {
         left: 50%;
         transform: translateX(-50%);
     }
 }
+
+@media screen and (max-width: 1158px) {
+    .carousel-caption {
+        font-size: 70%;
+    }
+}
+
+@media screen and (max-width: 903px) {
+    .carousel-caption {
+        font-size: 50%;
+    }
+}
+
 @media screen and (max-width: 575px) {
     .navbar-brand {
         text-align: center;
