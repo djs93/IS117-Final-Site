@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My First Bootstrap 4 Page</title>
+    <title>Dale Schofield - Contact</title>
     <link rel="stylesheet"
           href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
@@ -11,16 +11,18 @@
 </head>
 <body>
 <div class="container-fluid">
+    <!--
     <div class="row justify-content-start bg-dark navbar-dark">
-        <!-- Brand -->
+        !-- Brand --
         <a class="navbar-brand col-12" href="index.html">Dale Schofield</a>
     </div>
+    -->
     <div class="row">
         <nav class="navbar navbar-expand-sm
                     justify-content-center
                     bg-dark navbar-dark
                     col-12">
-
+            <a class="navbar-brand" href="index.html">Dale Schofield</a>
             <!-- Responsive Button for the smaller menu -->
             <button class="navbar-toggler" type="button"
                     data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -42,10 +44,11 @@
                             <a class="dropdown-item" href="projects/2DEngine.html">WIP 2D Game Engine</a>
                             <a class="dropdown-item" href="projects/VulkanEngine.html">Vulkan Game Engine</a>
                             <a class="dropdown-item" href="projects/Quake4Mod.html">Quake 4 Mod</a>
+                            <a class="dropdown-item" href="projects.html">All Projects</a>
                         </div>
                     </li>
                     <li class="nav-item col">
-                        <a class="nav-link" href="contact.html">Contact</a>
+                        <a class="nav-link active" href="contact.html">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -85,7 +88,7 @@
             </div>
         </div>
     </div>
-    <footer class="footer">
+    <footer class="row footer">
         <div class="container-fluid">
             <div class="row">
                 <p class="col-8 text-muted text-left">&copy; Dale Schofield, 2020</p>

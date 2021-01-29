@@ -6,20 +6,73 @@
     font-style: normal;
 }
 
-.footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: aliceblue;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    font-size: 0.5rem;
+html{
+    position: relative;
+    min-height: 100%;
+    background-color: rgb(26, 29, 30);
 }
 
-.footer{
-    font-size: 0.75rem;
+body{
+    color: rgb(230, 226, 219);
+    margin-bottom: 40px;
+    background-color: rgb(26, 29, 30);
+}
+
+.bg-helper{
+    background-color: rgb(26, 29, 30);
+}
+
+.row > .row{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.bg-dark{
+    background-color: rgb(48, 52, 54) !important;
+}
+
+.card {
+    background-color: rgb(26, 29, 30);
+    border-color: rgba(154, 143, 127, 0.13);
+}
+
+.container {
+    width: auto;
+    max-width: 680px;
+    padding: 0 15px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background-color: rgb(31, 34, 35);
+}
+
+.form-control {
+    color: rgb(199, 193, 183);
+    background-color: rgb(26, 29, 30);
+    border-color: rgb(66, 72, 75);
+}
+
+.dropdown-menu {
+    color: rgb(230, 226, 219);
+    list-style-image: none;
+    background-color: rgb(26, 29, 30);
+    border-color: rgba(154, 143, 127, 0.15);
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+    color: rgb(239, 234, 229);
+    text-decoration-color: currentcolor;
+    background-color: rgb(30, 33, 34);
+}
+.dropdown-item {
+    color: rgb(230, 226, 219) !important;
+    background-color: transparent;
+    border-color: currentcolor;
 }
 
 p {
@@ -73,12 +126,36 @@ p {
 }
 
 .about-me-text{
-    font-size: 110%;
+    font-size: 135%;
 }
 
 .center{
     margin-left: 50%;
     transform: translateX(-50%);
+}
+
+.content-container{
+    width: 60% !important;
+}
+
+.about-me-header{
+    font-size: 150%;
+}
+
+.about-me-img1{
+    width: 50%;
+}
+
+a, a:link{
+    color: forestgreen;
+}
+
+a:visited{
+    color: darkgreen;
+}
+
+a:hover, a:active{
+    color: limegreen;
 }
 
 @media screen and (min-width: 576px) {
@@ -93,14 +170,21 @@ p {
         font-size: 70%;
     }
 
-    .card, .about-me-text {
+    .card{
         font-size: 80%;
+    }
+
+    .content-container{
+        width: 85% !important;
     }
 }
 
 @media screen and (max-width: 903px) {
-    .carousel-caption, .about-me-text {
+    .carousel-caption{
         font-size: 50%;
+    }
+    .content-container{
+        width: 100% !important;
     }
 }
 
@@ -113,6 +197,9 @@ p {
     }
     .contact-message{
         padding: 0 15%;
+    }
+    .about-me-img1{
+        width: 100%;
     }
 }
 

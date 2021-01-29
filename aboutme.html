@@ -2,46 +2,49 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My First Bootstrap 4 Page</title>
-    <link rel="stylesheet"
+    <title>Dale Schofield - About Me</title>
+    <link crossorigin="anonymous"
           href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-          crossorigin="anonymous">
+          rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
 </head>
 <body>
+<!--
+<div class="row justify-content-start bg-dark navbar-dark">
+    !-- Brand --
+    <a class="navbar-brand col-12" href="index.html">Dale Schofield</a>
+</div>
+-->
 <div class="container-fluid">
-    <div class="row justify-content-start bg-dark navbar-dark">
-        <!-- Brand -->
-        <a class="navbar-brand col-12" href="index.html">Dale Schofield</a>
-    </div>
     <div class="row">
         <nav class="navbar navbar-expand-sm
-                    justify-content-center
-                    bg-dark navbar-dark
-                    col-12">
-
+                justify-content-center
+                bg-dark navbar-dark
+                col-12">
+            <a class="navbar-brand" href="index.html">Dale Schofield</a>
             <!-- Responsive Button for the smaller menu -->
-            <button class="navbar-toggler" type="button"
-                    data-toggle="collapse" data-target="#collapsibleNavbar">
+            <button class="navbar-toggler" data-target="#collapsibleNavbar"
+                    data-toggle="collapse" type="button">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse text-center" id="collapsibleNavbar">
                 <ul class="navbar-nav col-12">
                     <!-- Links -->
                     <li class="nav-item col">
-                        <a class="nav-link" href="aboutme.html">About Me</a>
+                        <a class="nav-link active" href="aboutme.html">About Me</a>
                     </li>
                     <!-- Dropdown -->
                     <li class="nav-item dropdown col">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop"
-                           data-toggle="dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"
+                           id="navbardrop">
                             Projects
                         </a>
                         <div class="dropdown-menu text-center">
                             <a class="dropdown-item" href="projects/2DEngine.html">WIP 2D Game Engine</a>
                             <a class="dropdown-item" href="projects/VulkanEngine.html">Vulkan Game Engine</a>
                             <a class="dropdown-item" href="projects/Quake4Mod.html">Quake 4 Mod</a>
+                            <a class="dropdown-item" href="projects.html">All Projects</a>
                         </div>
                     </li>
                     <li class="nav-item col">
@@ -73,46 +76,48 @@
         </div>
     </div>
     -->
-    <div class="row justify-content-center mt-3">
-        <div class="col-sm-8">
-            <p class="about-me-text">Hello! I'm Dale Schofield, an IT sophomore at NJIT! I'm currently the vice-president of NJIT Esports,
-            the campus' main gaming club for both casual and competitive players. I'm often at all of our events
-            helping in some way. I hope to be a game developer as my career. My classes so far at NJIT have prepared
-            me a lot for this so far, and I know I'll be even more prepared in the years to come! I don't have any
-            more off the top of my head to put here, so here's our favorite friend, lorem ipsum! Lorem ipsum dolor sit
-                amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Sit amet mauris commodo quis imperdiet massa. Id faucibus nisl tincidunt eget nullam non nisi est sit.
-                Viverra suspendisse potenti nullam ac tortor vitae purus. Arcu risus quis varius quam quisque id. Neque
-                ornare aenean euismod elementum nisi. Commodo nulla facilisi nullam vehicula. Ultrices tincidunt arcu
-                non sodales neque sodales. In ante metus dictum at tempor. Maecenas ultricies mi eget mauris pharetra.
-                Sem fringilla ut morbi tincidunt. Risus commodo viverra maecenas accumsan lacus vel facilisis volutpat
-                est. Risus at ultrices mi tempus imperdiet nulla malesuada pellentesque. Aliquam ultrices sagittis orci
-                a. Consectetur purus ut faucibus pulvinar elementum integer. Augue eget arcu dictum varius duis at
-                consectetur lorem donec. Id faucibus nisl tincidunt eget nullam. Viverra justo nec ultrices dui. A arcu
-                cursus vitae congue. Netus et malesuada fames ac. Duis ultricies lacus sed turpis tincidunt. Mauris
-                rhoncus aenean vel elit scelerisque mauris. Laoreet id donec ultrices tincidunt arcu. Fames ac turpis
-                egestas sed tempus. Sit amet nulla facilisi morbi tempus iaculis urna id. Pretium fusce id velit ut
-                tortor pretium viverra suspendisse potenti. Tortor dignissim convallis aenean et tortor at risus
-                viverra. Vel orci porta non pulvinar neque laoreet suspendisse interdum. Orci porta non pulvinar neque.
-                Tortor condimentum lacinia quis vel. Dolor sit amet consectetur adipiscing elit ut aliquam. Augue eget
-                arcu dictum varius. Lorem mollis aliquam ut porttitor leo a diam sollicitudin.
-            </p>
-        </div>
-        <div class="col-sm-4">
-            <img class="img-fluid" src="images/me_1.png" alt="picture of me">
+</div>
+<div class="container-fluid content-container">
+    <div class="bg-helper" style="min-height: 100%;">
+        <div class="row justify-content-center mt-3">
+            <div class="col">
+                <h1 class="text-center">Hello! I'm Dale Schofield, an IT major at NJIT!</h1>
+                <h4 class="text-center">I'm currently a junior and my IT specialization is Game Development.</h4>
+                <img alt="picture of me" class="img-fluid about-me-img1 center" src="images/me_1.png">
+                <p class="about-me-text mt-3">Thanks for stopping by and taking the time to read this! Through both my
+                    love
+                    of gaming and computers, as well as my challenging yet enriching courses at NJIT, I aspire to be a
+                    game developer in the future. Specifically, I would like to become a gameplay programmer or work
+                    with the game engine, being a part of the foundation and working with others to build a great game.
+                    <br>If you take a look through <a href="projects.html">my projects</a>, you'll see two game engine
+                    projects I've worked on, <a href="projects/VulkanEngine.html">one in 3D</a> and <a
+                            href="projects/2DEngine.html">one in 2D</a> as well as the start of my NJIT game dev
+                    journey, <a href="projects/Quake4Mod.html">my Quake 4 mod</a>, as well
+                    as the latest project from my educational software design course, <a
+                            href="projects/MinionFarmingSim.html">Minion Farming Simulator 2020</a>. I'm
+                    very proud of all of these projects. Each one taught me something new and built upon the last.
+                    <br>Through these projects, I've gained valuable experience with Visual Studio, Unity, GitHub,
+                    Blender, Linear Algebra, C, C++, and C#. I've also had courses in Game Design and Architecture,
+                    teaching me more about game design itself, as well as game economies, narratives, and how choices
+                    impact a player's decisions.
+                </p>
+                <img alt="picture of me" class="img-fluid about-me-img1 center mt-3" src="images/me_and_denis.png">
+                <p class="about-me-text mt-3 mb-4"> I'm also currently
+                    the vice-president of NJIT Esports, the campus' main gaming club for both casual and competitive
+                    players. I love interacting with our community, so you can often find me helping out at our
+                    events!
+                    <br>I was there at the founding of NJIT Esports my first semester at NJIT, and have been along for
+                    the ride since. I've gotten to experience the ups and downs of working with my peers, managing their
+                    tasks, talking to administration, planning events, and everything else that comes with such a
+                    position. It's given me experience in not only management, but also socializing and brainstorming,
+                    two very important skills in any workplace.
+                </p>
+            </div>
         </div>
     </div>
-    <div class="row justify-content-center">
-        <div class="col-sm-4">
-            <img class="img-fluid" src="images/me_and_denis.png" alt="another picture of me">
-        </div>
-        <div class="col-sm-8">
-            <p class="about-me-text">Turpis egestas sed tempus urna et pharetra pharetra. Etiam erat velit scelerisque in dictum non consectetur. Quis commodo odio aenean sed adipiscing diam donec adipiscing tristique. Platea dictumst vestibulum rhoncus est pellentesque. Et malesuada fames ac turpis egestas sed tempus urna. Pellentesque habitant morbi tristique senectus et netus et malesuada. Gravida rutrum quisque non tellus orci ac. A erat nam at lectus urna duis convallis. Integer malesuada nunc vel risus. Volutpat commodo sed egestas egestas fringilla phasellus. Duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat. Penatibus et magnis dis parturient montes nascetur. Tellus mauris a diam maecenas sed enim ut sem. Enim nulla aliquet porttitor lacus luctus accumsan tortor posuere ac. Sagittis orci a scelerisque purus semper eget duis. Diam ut venenatis tellus in metus vulputate eu scelerisque.
-                Tellus elementum sagittis vitae et. Viverra maecenas accumsan lacus vel facilisis. Morbi tincidunt ornare massa eget egestas purus viverra accumsan. Massa enim nec dui nunc. Aenean et tortor at risus viverra adipiscing at in. Egestas diam in arcu cursus euismod. Lacus vestibulum sed arcu non odio. Neque egestas congue quisque egestas. Felis imperdiet proin fermentum leo vel orci porta non pulvinar. Aliquet nec ullamcorper sit amet risus nullam eget felis eget. Non arcu risus quis varius quam quisque. Egestas dui id ornare arcu odio ut sem nulla pharetra. Dictumst quisque sagittis purus sit amet volutpat consequat mauris nunc. Cursus eget nunc scelerisque viverra mauris in aliquam. Imperdiet sed euismod nisi porta lorem mollis aliquam ut. Euismod quis viverra nibh cras pulvinar mattis. Pulvinar mattis nunc sed blandit libero volutpat sed cras.
-                Rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt. Tempus urna et pharetra pharetra massa. Diam phasellus vestibulum lorem sed risus ultricies tristique nulla aliquet. Volutpat blandit aliquam etiam erat velit scelerisque. Nisi scelerisque eu ultrices vitae auctor eu augue. In aliquam sem fringilla ut. Nisl suscipit adipiscing bibendum est ultricies integer quis. Phasellus vestibulum lorem sed risus ultricies tristique nulla. Dolor sit amet consectetur adipiscing elit duis. Neque vitae tempus quam pellentesque nec nam. Risus pretium quam vulputate dignissim suspendisse in est.</p>
-        </div>
-    </div>
-    <footer class="footer">
+</div>
+<div class="container-fluid">
+    <footer class="row footer justify-content-center">
         <div class="container-fluid">
             <div class="row">
                 <p class="col-8 text-muted text-left">&copy; Dale Schofield, 2020</p>
@@ -123,15 +128,14 @@
     </footer>
 </div>
 
-
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+<script crossorigin="anonymous"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+<script crossorigin="anonymous"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script crossorigin="anonymous"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 </body>
 </html>
