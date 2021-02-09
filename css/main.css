@@ -75,6 +75,17 @@ body{
     border-color: currentcolor;
 }
 
+.dropdown-item.active {
+    color: #fff;
+    text-decoration: none;
+    background-color: rgb(53, 71, 53);
+}
+
+.dropdown-menu {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
 p {
      margin-bottom: 0;
  }
@@ -144,6 +155,13 @@ p {
 
 .about-me-img1{
     width: 50%;
+}
+
+.bee-img{
+    width: 75%;
+    image-rendering: optimizespeed;
+    image-rendering: pixelated;
+    -ms-interpolation-mode: nearest-neighbor;
 }
 
 a, a:link{
