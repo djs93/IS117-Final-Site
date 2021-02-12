@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dale Schofield - About Me</title>
+    <link crossorigin="anonymous"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+          rel="stylesheet">
+    <link href="../css/main.css" rel="stylesheet">
+</head>
+<body>
+<!--
+<div class="row justify-content-start bg-dark navbar-dark">
+    !-- Brand --
+    <a class="navbar-brand col-12" href="index.html">Dale Schofield</a>
+</div>
+-->
+<div class="container-fluid">
+    <div class="row">
+        <nav class="navbar navbar-expand-sm
+                justify-content-center
+                bg-dark navbar-dark
+                col-12">
+            <a class="navbar-brand" href="../index.html">Dale Schofield</a>
+            <!-- Responsive Button for the smaller menu -->
+            <button class="navbar-toggler" data-target="#collapsibleNavbar"
+                    data-toggle="collapse" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse text-center" id="collapsibleNavbar">
+                <ul class="navbar-nav col-12">
+                    <!-- Links -->
+                    <li class="nav-item col">
+                        <a class="nav-link" href="../aboutme.html">About Me</a>
+                    </li>
+                    <!-- Dropdown -->
+                    <li class="nav-item dropdown col">
+                        <a class="nav-link dropdown-toggle active" data-toggle="dropdown" href="#"
+                           id="navbardrop">
+                            Projects
+                        </a>
+                        <div class="dropdown-menu text-center">
+                            <a class="dropdown-item" href="../projects/2DEngine_new.html">2D Game Engine</a>
+                            <a class="dropdown-item" href="../projects/VulkanEngine.html">Vulkan Game Engine</a>
+                            <a class="dropdown-item active" href="../projects/Quake4Mod_new.html">Quake 4 Mod</a>
+                            <a class="dropdown-item pb-2" href="../projects.html">All Projects</a>
+                        </div>
+                    </li>
+                    <li class="nav-item col">
+                        <a class="nav-link" href="../contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+    </div>
+    <!--
+    <div class="row">
+        <p class="col-1">Col 1</p>
+        <p class="col-1">Col 2</p>
+        <p class="col-1">Col 3</p>
+        <p class="col-1">Col 4</p>
+        <p class="col-1">Col 5</p>
+        <p class="col-1">Col 6</p>
+        <p class="col-1">Col 7</p>
+        <p class="col-1">Col 8</p>
+        <p class="col-1">Col 9</p>
+        <p class="col-1">Col 10</p>
+        <p class="col-1">Col 11</p>
+        <p class="col-1">Col 12</p>
+
+        <div class="col-sm-4  text-center">
+            <h2>h2 Bootstrap heading (24px)</h2>
+            <h3>h2 Bootstrap heading (18px)</h3>
+        </div>
+    </div>
+    -->
+</div>
+<div class="container-fluid content-container">
+    <div class="bg-helper" style="min-height: 100%;">
+        <div class="row justify-content-center mt-3">
+            <div class="col">
+                <h1 class="text-center">Quake 4 Mod</h1>
+                <h3 class="text-center">League of Quake</h3>
+                <img alt="quake mod preview" class="img-fluid about-me-img1 center" src="../images/projects/quake4/q4_4.png">
+                <p class="about-me-text mt-3">This is a mod for the game Quake 4, originally released in 2005 by Raven Software and id Software.
+                    The theme of this mod is League of Legends in Quake 4. Currently, there are 5 different classes,
+                    each with two upgradable abilities. The player also gains experience and gold upon killing enemies.
+                    All of these stats and selections also persist through levels and get saved/loaded from save files!
+                    One of the most challenging parts of this mod was having a buy menu pop up so the player could
+                    purchase items and upgrade their abilities. It was my first dive into what true game production
+                    looks like, and helped me develop the other projects on this page.
+                </p>
+                <h2 class="text-center mt-3">Features</h2>
+                <h4 class="text-center mt-3">Custom Selection Menus</h4>
+                <div class="row justify-content-center mt-1">
+                    <img alt="class selection window" class="img-fluid selection-img" src="../images/projects/quake4/q4_1.png">
+                    <img alt="item shop window" class="img-fluid selection-img" src="../images/projects/quake4/q4_2.png">
+                </div>
+                <p class="about-me-text mt-2">
+                    By far the most complicated part of the project, these menus are the thing I'm most proud of for this
+                    project. I took seemingly scrapped code for an item shop from the multiplayer mode code and reverse
+                    engineered it in order to figure out how it worked. Then, I rewrote parts of it in order to make it
+                    work in single player. I made two separate selection windows: one for class selection, and one for
+                    the item shop. Again, this was one of the most technical changes in this entire mod and it feels
+                    so good to have gotten it working how I wanted it to!
+                </p>
+                <h4 class="text-center mt-3">Classes</h4>
+                <img alt="class selection window" class="img-fluid about-me-img1 center mt-1" src="../images/projects/quake4/q4_6.png">
+                <p class="about-me-text mt-2">
+                    When the player first spawns in, they must select a class. Each class has two abilities and different
+                    stats, such as health and damage. The available classes implemented are Tank, Assassin, Mage,
+                    Marksman (my personal favorite), and Support.
+                </p>
+                <h4 class="text-center mt-3">Abilities</h4>
+                <img alt="volley ability" class="img-fluid about-me-img1 center mt-1" src="../images/projects/quake4/q4_3.png">
+                <p class="about-me-text mt-2">
+                    Every class has two abilities, each modifying some aspect of weapons originally in Quake 4 in order
+                    to theme them similar to abilities in League of Legends. Instead of listing them all in text, here's
+                    a table that describes them:
+                </p>
+                <table class="table mt-3 table-bordered table-striped table-dark">
+                    <thead>
+                        <tr>
+                            <th scope="col"></th>
+                            <th scope="col">Ability Name</th>
+                            <th scope="col" class="ability-desc-col">Ability Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row" rowspan="2">Tank</th>
+                        <td>Purge (Urgot W)</td>
+                        <td>Slows player while firing, gives 50 temporary armor while firing.</td>
+                    </tr>
+                    <tr>
+                        <td>Adaptive Defenses (Camille Passive)</td>
+                        <td>Melee attack, gives 5 armor boost on attack.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" rowspan="2">Assassin</th>
+                        <td>Shunpo (Katarina E)</td>
+                        <td>Teleport behind target enemy and deal damage. </td>
+                    </tr>
+                    <tr>
+                        <td>Backstab (Shaco passive)</td>
+                        <td>Melee attack, does double damage when behind an enemy.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" rowspan="2">Mage</th>
+                        <td>Plasma Fission (Vel'Koz Q)</td>
+                        <td>Shoots a projectile that then splits when hitting something or reaching the end of its
+                            travel.</td>
+                    </tr>
+                    <tr>
+                        <td>Bouncing Bomb (Ziggs Q)</td>
+                        <td>Projectile that bounces up to 3 times, exploding on enemy contact or at the end of the
+                        final bounce.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" rowspan="2">Marksman</th>
+                        <td>Volley (Ashe W)</td>
+                        <td>Shoots out 6 rockets in a cone. </td>
+                    </tr>
+                    <tr>
+                        <td>Icathian Rain (Kai'Sa Q)</td>
+                        <td>Shoots 6 homing rockets at nearby enemies.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" rowspan="2">Support</th>
+                        <td>Dark Binding (Morgana Q)</td>
+                        <td>Slower rocket that roots a hit enemy for 4 seconds.</td>
+                    </tr>
+                    <tr>
+                        <td>Astral Infusion (Soraka W)</td>
+                        <td>Grenade, heals all allies in the explosion area for 25 health. Also damages enemies for the
+                            same amount.</td>
+                    </tr>
+
+                    </tbody>
+                </table>
+                <h4 class="text-center mt-3">Item Shop & Gold</h4>
+                <img alt="item shop window" class="img-fluid about-me-img1 center mt-1" src="../images/projects/quake4/q4_2.png">
+                <p class="about-me-text mt-2">
+                    Shop text
+                </p>
+                <h4 class="text-center mt-3">Experience</h4>
+                <img alt="experience bar" class="img-fluid about-me-img1 center mt-1" src="../images/projects/quake4/q4_5.png">
+                <p class="about-me-text mt-2 mb-5">
+                    Exp text (plus upgrade table)
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <footer class="row footer justify-content-center">
+        <div class="container-fluid">
+            <div class="row">
+                <p class="col-8 text-muted text-left">&copy; Dale Schofield, 2021</p>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<script crossorigin="anonymous"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -164,6 +164,12 @@ p {
     -ms-interpolation-mode: nearest-neighbor;
 }
 
+.selection-img{
+    width: 45%;
+    margin-right: 3px;
+    margin-left: 3px;
+}
+
 a, a:link{
     color: forestgreen;
 }
@@ -174,6 +180,14 @@ a:visited{
 
 a:hover, a:active{
     color: limegreen;
+}
+
+.table{
+    color: rgb(230, 226, 219);
+}
+
+.ability-desc-col{
+    width: 64%;
 }
 
 @media screen and (min-width: 576px) {
