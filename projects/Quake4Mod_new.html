@@ -93,7 +93,7 @@
                     looks like, and helped me develop the other projects on this page.
                 </p>
                 <h2 class="text-center mt-3">Features</h2>
-                <h4 class="text-center mt-3">Custom Selection Menus</h4>
+                <h4 class="text-center mt-4">Custom Selection Menus</h4>
                 <div class="row justify-content-center mt-1">
                     <img alt="class selection window" class="img-fluid selection-img" src="../images/projects/quake4/q4_1.png">
                     <img alt="item shop window" class="img-fluid selection-img" src="../images/projects/quake4/q4_2.png">
@@ -106,14 +106,14 @@
                     the item shop. Again, this was one of the most technical changes in this entire mod and it feels
                     so good to have gotten it working how I wanted it to!
                 </p>
-                <h4 class="text-center mt-3">Classes</h4>
+                <h4 class="text-center mt-4">Classes</h4>
                 <img alt="class selection window" class="img-fluid about-me-img1 center mt-1" src="../images/projects/quake4/q4_6.png">
                 <p class="about-me-text mt-2">
                     When the player first spawns in, they must select a class. Each class has two abilities and different
                     stats, such as health and damage. The available classes implemented are Tank, Assassin, Mage,
                     Marksman (my personal favorite), and Support.
                 </p>
-                <h4 class="text-center mt-3">Abilities</h4>
+                <h4 class="text-center mt-4">Abilities</h4>
                 <img alt="volley ability" class="img-fluid about-me-img1 center mt-1" src="../images/projects/quake4/q4_3.png">
                 <p class="about-me-text mt-2">
                     Every class has two abilities, each modifying some aspect of weapons originally in Quake 4 in order
@@ -180,16 +180,117 @@
 
                     </tbody>
                 </table>
-                <h4 class="text-center mt-3">Item Shop & Gold</h4>
+                <h4 class="text-center mt-4">Item Shop & Gold</h4>
                 <img alt="item shop window" class="img-fluid about-me-img1 center mt-1" src="../images/projects/quake4/q4_2.png">
                 <p class="about-me-text mt-2">
-                    Shop text
+                    Like the class selection, the shop was one of the window systems that took the longest time (and
+                    most pain) to develop. This menu came before the class selection menu and taught me a ton on how
+                    the UIs in Quake 4 work. On the left you have 5 items. Here are the effects of these items:
                 </p>
-                <h4 class="text-center mt-3">Experience</h4>
+                <table class="table mt-3 table-bordered table-striped table-dark">
+                    <thead>
+                    <tr>
+                        <th scope="col">Item Name</th>
+                        <th scope="col">Item Cost</th>
+                        <th scope="col" class="ability-desc-col">Item Effect</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Rabadon's Deathcap</td>
+                        <td>3600</td>
+                        <td>30% additional damage.</td>
+                    </tr>
+                    <tr>
+                        <td>Ardent Censer</td>
+                        <td>2850</td>
+                        <td>10% additional damage, 20% cooldown reduction.</td>
+                    </tr>
+                    <tr>
+                        <td>Duskblade of Draktharr</td>
+                        <td>2900</td>
+                        <td>30% additional damage.</td>
+                    </tr>
+                    <tr>
+                        <td>Warmog's Armor</td>
+                        <td>2300</td>
+                        <td>100 additional health.</td>
+                    </tr>
+                    <tr>
+                        <td>Runaan's Hurricane</td>
+                        <td>2600</td>
+                        <td>40% cooldown reduction.</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <p class="about-me-text mt-2">
+                    The cooldown reduction and damage amplifiers factor directly into the reloading and damage calculations,
+                    respectively. The additional health goes directly to the player's inventory, where it is kept track
+                    of in Quake 4.
+                </p>
+                <h4 class="text-center mt-4">Experience</h4>
                 <img alt="experience bar" class="img-fluid about-me-img1 center mt-1" src="../images/projects/quake4/q4_5.png">
-                <p class="about-me-text mt-2 mb-5">
-                    Exp text (plus upgrade table)
+                <p class="about-me-text mt-2">
+                    As you kill enemies you gain experience. You use these levels in the store to upgrade your abilities.
+                    Here is what each ability does when upgraded:
                 </p>
+                <table class="table mt-3 mb-5 table-bordered table-striped table-dark">
+                    <thead>
+                    <tr>
+                        <th scope="col"></th>
+                        <th scope="col">Ability Name</th>
+                        <th scope="col" class="ability-desc-col">Upgrade Description</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row" rowspan="2">Tank</th>
+                        <td>Purge (Urgot W)</td>
+                        <td>Player no longer slowed while firing, 75 temporary armor while firing (increased from 50).</td>
+                    </tr>
+                    <tr>
+                        <td>Adaptive Defenses (Camille Passive)</td>
+                        <td>Gives 10 armor boost on attack (increased from 5). Also heals for 10 on attack.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" rowspan="2">Assassin</th>
+                        <td>Shunpo (Katarina E)</td>
+                        <td>Different particles and 50% increased damage. </td>
+                    </tr>
+                    <tr>
+                        <td>Backstab (Shaco passive)</td>
+                        <td>Deals additional damage.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" rowspan="2">Mage</th>
+                        <td>Plasma Fission (Vel'Koz Q)</td>
+                        <td>Projectiles that split from the original now split again (for a total of 7 projectiles).</td>
+                    </tr>
+                    <tr>
+                        <td>Bouncing Bomb (Ziggs Q)</td>
+                        <td>Bounces 2 additional times, each bounce now leaves mini bombs that explode after 0.9 seconds.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" rowspan="2">Marksman</th>
+                        <td>Volley (Ashe W)</td>
+                        <td>Shoots out an additional 4 rockets (for a total of 10). </td>
+                    </tr>
+                    <tr>
+                        <td>Icathian Rain (Kai'Sa Q)</td>
+                        <td>Shoots out an additional 4 homing rockets at nearby enemies (for a total of 10).</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" rowspan="2">Support</th>
+                        <td>Dark Binding (Morgana Q)</td>
+                        <td>Root lasts 2 seconds longer.</td>
+                    </tr>
+                    <tr>
+                        <td>Astral Infusion (Soraka W)</td>
+                        <td>Heals all allies in the explosion area and damages enemies for an additional 25 health. (for
+                            a total of 50 healing/damage).</td>
+                    </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
