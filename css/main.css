@@ -170,6 +170,12 @@ p {
     margin-left: 3px;
 }
 
+.anim-img{
+    width: 24%;
+    margin-right: 3px;
+    margin-left: 3px;
+}
+
 a, a:link{
     color: forestgreen;
 }
