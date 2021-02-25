@@ -218,6 +218,14 @@ h6{
     width: 65%;
 }
 
+.contact-link{
+    color: rgba(230, 226, 219, 1.0) !important;
+}
+
+.contact-picture{
+    height: 32px;
+}
+
 @media screen and (min-width: 576px) {
     .dropdown-menu {
         left: 50%;
