@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dale Schofield - About Me</title>
+    <link crossorigin="anonymous"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+          rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+<!--
+<div class="row justify-content-start bg-dark navbar-dark">
+    !-- Brand --
+    <a class="navbar-brand col-12" href="index.html">Dale Schofield</a>
+</div>
+-->
+<div class="container-fluid">
+    <div class="row">
+        <nav class="navbar navbar-expand-sm
+                justify-content-center
+                bg-dark navbar-dark
+                col-12">
+            <a class="navbar-brand" href="./index.html">Dale Schofield</a>
+            <!-- Responsive Button for the smaller menu -->
+            <button class="navbar-toggler" data-target="#collapsibleNavbar"
+                    data-toggle="collapse" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse text-center" id="collapsibleNavbar">
+                <ul class="navbar-nav col-12">
+                    <!-- Links -->
+                    <li class="nav-item col">
+                        <a class="nav-link" href="./aboutme.html">About Me</a>
+                    </li>
+                    <!-- Dropdown -->
+                    <li class="nav-item dropdown col">
+                        <a class="nav-link dropdown-toggle active" data-toggle="dropdown" href="#"
+                           id="navbardrop">
+                            Projects
+                        </a>
+                        <div class="dropdown-menu text-center">
+                            <a class="dropdown-item active" href="./projects/2DEngine_new.html">2D Game Engine</a>
+                            <a class="dropdown-item" href="./projects/VulkanEngine_new.html">Vulkan Game Engine</a>
+                            <a class="dropdown-item" href="./projects/Quake4Mod_new.html">Quake 4 Mod</a>
+                            <a class="dropdown-item pb-2" href="./projects.html">All Projects</a>
+                        </div>
+                    </li>
+                    <li class="nav-item col">
+                        <a class="nav-link" href="./contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+    </div>
+    <!--
+    <div class="row">
+        <p class="col-1">Col 1</p>
+        <p class="col-1">Col 2</p>
+        <p class="col-1">Col 3</p>
+        <p class="col-1">Col 4</p>
+        <p class="col-1">Col 5</p>
+        <p class="col-1">Col 6</p>
+        <p class="col-1">Col 7</p>
+        <p class="col-1">Col 8</p>
+        <p class="col-1">Col 9</p>
+        <p class="col-1">Col 10</p>
+        <p class="col-1">Col 11</p>
+        <p class="col-1">Col 12</p>
+
+        <div class="col-sm-4  text-center">
+            <h2>h2 Bootstrap heading (24px)</h2>
+            <h3>h2 Bootstrap heading (18px)</h3>
+        </div>
+    </div>
+    -->
+</div>
+<div class="container-fluid content-container">
+    <div class="bg-helper" style="min-height: 100%;">
+        <div class="row justify-content-center mt-3">
+            <div class="col">
+                <h1 class="text-center">My Projects</h1>
+                <h6 class="text-center"><em>Click the image to go to that project's page</em></h6>
+                <hr>
+                <h3 class="text-center">Bee Defense</h3>
+                <h6 class="text-center">SDL2 2D Game Engine</h6>
+                <a href="projects/2DEngine_new.html"><img alt="2d project picture" class="img-fluid project-img center" src="./images/projects/2d/2d_1.png"></a>
+                <p class="project-text mt-3 center">This is the project I made for my 2D Game Development class! I call it Bee Defense!
+                    It uses SDL for drawing and completely original physics and entity systems.
+                    It's a tower defense game based on Bloons Tower Defense 6, but with bees and flowers!
+                </p>
+
+                <h3 class="text-center mt-5">Teemo Jump</h3>
+                <h6 class="text-center">Vulkan 3D Game Engine</h6>
+                <a href="projects/VulkanEngine_new.html"><img alt="2d project picture" class="img-fluid project-img center" src="./images/projects/vulkan/vulkan_7_mushrooms.png"></a>
+                <p class="project-text mt-3 center">This is a game engine written nearly from scratch in C with Vulkan and
+                    SDL2 for my special topics course at NJIT. I call it Teemo Jump! It's a 3D platforming game, similar
+                    to the 3D Mario Bros. games. The main requirements for this project were writing shaders, writing
+                    our own physics and collisions systems, figuring out a 2D pipeline to overlay on the screen,
+                    importing 3D models and getting them to animate, having powerups, as well as implementing an editor
+                    and saving/loading levels to/from JSON (and having Polish, of course).
+                </p>
+
+                <h3 class="text-center mt-5">League of Quake</h3>
+                <h6 class="text-center">Quake 4 Mod</h6>
+                <a href="projects/Quake4Mod_new.html"><img alt="2d project picture" class="img-fluid project-img center" src="./images/projects/quake4/q4_2.png"></a>
+                <p class="project-text mt-3 center">This is a mod for the game Quake 4, putting a few League of Legends
+                    mechanics and abilities in the game. There are 5 different classes,
+                    each with two upgradable abilities. The player also gains experience and gold upon killing enemies.
+                    I had to repurpose code from Quake 4's multiplayer source code in order to bring up a buy menu,
+                    normally never possible in single player. This was my first project completed at NJIT and I'm very
+                    proud of it considering my lack of experience prior.
+                </p>
+
+                <h3 class="text-center mt-5">Minion Farming Simulator</h3>
+                <h6 class="text-center">Educational Minion Farmer</h6>
+                <a href="projects/minion_farmer.html"><img alt="2d project picture" class="img-fluid project-img center" src="./images/projects/minions/minion_0_preview.png"></a>
+                <p class="project-text mt-3 center mb-5">This is a project I worked on for my educational software design
+                    class at NJIT. Using Unity, I made a tool to educate what minions are, their purpose, and how to
+                    last hit them in League of Legends. Different from my game dev class projects, this one was designed
+                    first to be educational, second to be a game.
+                </p>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <footer class="row footer justify-content-center">
+        <div class="container-fluid">
+            <div class="row">
+                <p class="col-8 text-muted text-left">&copy; Dale Schofield, 2021</p>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<script crossorigin="anonymous"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>

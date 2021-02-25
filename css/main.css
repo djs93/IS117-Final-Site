@@ -154,7 +154,7 @@ p {
 }
 
 .about-me-img1{
-    width: 50%;
+    width: 60%;
 }
 
 .bee-img{
@@ -194,6 +194,28 @@ a:hover, a:active{
 
 .ability-desc-col{
     width: 64%;
+}
+
+.btn-primary, .btn-primary:visited, .btn-primary:active, .btn-primary:hover{
+    color: rgb(230, 226, 219) !important;
+}
+
+hr {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    width: 75%;
+}
+
+.project-text{
+    font-size: 145%;
+    width: 80%;
+}
+
+h6{
+    color: rgba(230, 226, 219, 0.7) !important;
+}
+
+.project-img{
+    width: 65%;
 }
 
 @media screen and (min-width: 576px) {
